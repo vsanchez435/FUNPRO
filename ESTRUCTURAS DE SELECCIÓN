@@ -1,0 +1,71 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "provenance": [],
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/vsanchez435/FUNPRO/blob/main/ESTRUCTURAS%20DE%20SELECCI%C3%93N\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": 1,
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "On2uKPg8lxAX",
+        "outputId": "aed4dafc-35bf-4ce5-e4f6-418a3948b9f7"
+      },
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "ingrese la nota 1: 4\n",
+            "ingrese la nota 2: 4\n",
+            "ingrese la nota 3: 4\n",
+            "ingrese la nota 4: 1\n",
+            "ingrese las fallas del estudiante:0\n",
+            "cuantas son las horas de su programa:15\n",
+            "Aprobó porque su nota es de 3.4000000000000004 y asistio más del 20% de las clases\n"
+          ]
+        }
+      ],
+      "source": [
+        "n1=float(input(\"ingrese la nota 1: \"))\n",
+        "n2=float(input(\"ingrese la nota 2: \"))\n",
+        "n3=float(input(\"ingrese la nota 3: \"))\n",
+        "n4=float(input(\"ingrese la nota 4: \"))\n",
+        "f=int(input(\"ingrese las fallas del estudiante:\"))\n",
+        "a=int(input(\"cuantas son las horas de su programa:\"))\n",
+        "p=(n1+n2+n3)/3*.8+n4*.2\n",
+        "if p>=3:\n",
+        "  if f<=a*.2:\n",
+        "    print(f\"Aprobó porque su nota es de {p} y asistio más del 20% de las clases\")\n",
+        "  else:\n",
+        "    print(f\"Reprobó porque falto {f} veces que es superior al 20%\")\n",
+        "else:\n",
+        "  print(\"Reprobó porque su nota fue de {p}\")"
+      ]
+    }
+  ]
+}
